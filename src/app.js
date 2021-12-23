@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 9091;
 
 app.use(express.json());
 
-app.use("/todos", TodoRouter)
+app.use("/api/todos", TodoRouter)
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html")
